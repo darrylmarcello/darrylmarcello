@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>My Favorite Movies</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Darryl's Movie Page</strong></a>
+            <ul class="icons">
+              <li><a href="https://instagram.com/darrylmarcello" class="icon brands fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
+            </ul>
+
+            <!-- JavaScript Movie Section -->
+            <section>
+              <h2>🎬 My Top 5 Favorite Movies</h2>
+              <button onclick="showMovie()">Click to reveal one!</button>
+              <p id="movieDisplay" style="font-weight: bold; font-size: 1.2em; color: #444;"></p>
+            </section>
+          </header>
+
+          <!-- Movie Reviews Section -->
+          <section id="movie-reviews">
+            <header class="major">
+              <h2>💬 My Movie Reviews</h2>
+            </header>
+
+            <div class="posts">
+              <article>
+                <h3>Top Gun: Maverick</h3>
+                <img src="images/topgun.jpg" alt="Top Gun: Maverick Poster" style="max-width:100%; height:auto;" />
+                <p>Top Gun: Maverick takes off as a thrilling and nostalgic sequel that beautifully balances high-octane aerial action with heartfelt storytelling. Tom Cruise delivers a compelling performance as Maverick, showing both his fearless flying skills and emotional depth. The film’s breathtaking flight sequences and modern visual effects make it an unforgettable cinematic experience that honors the original while carving its own legacy.</p>
+              </article>
+
+              <article>
+                <h3>Dune: Part Two</h3>
+                <img src="images/dune2.jpg" alt="Dune: Part Two Poster" style="max-width:100%; height:auto;" />
+                <p>When I watched it in IMAX, my jaw dropped. Denis Villeneuve managed to bring this sequel to new heights with its captivating storytelling. Amazing performances from the cast especially Timmy. He delivered a powerful and transformative performance as Paul Atreides, showing incredible depth and growth from the first movie. The cinematography and musical score really caught my eye. You can’t never go wrong with Greig Fraser and Hans Zimmer as they have excellent track records working in great movies. This movie is not just a sequel, it’s an achievement in filmmaking. Overall. It was pure cinema.</p>
+              </article>
+
+              <article>
+                <h3>Oppenheimer</h3>
+                <img src="images/oppenheimer.jpg" alt="Oppenheimer Poster" style="max-width:100%; height:auto;" />
+                <p>Dark, intense, and brilliantly acted. Oppenheimer is a gripping and thought-provoking biographical drama that masterfully explores the complex life of J. Robert Oppenheimer and the moral dilemmas surrounding the creation of the atomic bomb. Christopher Nolan’s direction is intense and meticulous, supported by powerful performances and haunting visuals. The film challenges viewers to reflect on the consequences of scientific progress and the heavy burden of responsibility.</p>
+              </article>
+
+              <article>
+                <h3>Mission: Impossible – Fallout</h3>
+                <img src="images/mi-fallout.jpg" alt="Mission Impossible Fallout Poster" style="max-width:100%; height:auto;" />
+                <p>Pure action brilliance. Mission: Impossible – Fallout is an adrenaline-pumping action thriller that raises the bar for the franchise. With jaw-dropping stunts, a fast-paced plot, and Tom Cruise’s relentless dedication, it delivers nonstop excitement. The chemistry among the cast and the intense sequences keep you on the edge of your seat from start to finish.</p>
+              </article>
+
+              <article>
+                <h3>F1: The Movie</h3>
+                <img src="images/f1-movie.jpg" alt="F1 The Movie Poster" style="max-width:100%; height:auto;" />
+                <p>They were absolutely right when they said this would be the most authentic racing movie ever made. The cast delivers outstanding performances, particularly Brad Pitt and Damson Idris. The racing sequences are thrilling, capturing the intensity and excitement perfectly. The cinematography is stunning, immersing you in the experience of being inside an F1 car. Hans Zimmer’s musical score is nothing short of exceptional. Highly recommend watching it in IMAX for the full, immersive experience️.</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- Banner -->
+          <section id="banner">
+            <!-- No image in banner as requested -->
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+            </ul>
+          </nav>
+
+          <!-- Social Links -->
+          <section>
+            <header class="major">
+              <h2>Follow Me</h2>
+            </header>
+            <ul class="contact">
+              <li class="icon brands fa-instagram"><a href="https://instagram.com/darrylmarcello" target="_blank" rel="noopener">Instagram: @darrylmarcello</a></li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p>Student ID: 21319012 | Name: Darryl Ghiffary Marcello Arden Rizal</p>
+            <p>Original template from: <a href="https://html5up.net/editorial" target="_blank" rel="noopener">HTML5 UP — Editorial</a></p>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- JS: Welcome Message & Movie Function -->
+    <script>
+      window.onload = () => {
+        alert("Welcome to my personal movie site!");
+      };
+
+      function showMovie() {
+        const movies = [
+          "Top Gun: Maverick (2022) – Directed by Joseph Kosinski ✈️",
+          "Dune: Part Two (2024) – Directed by Denis Villeneuve 🏜️",
+          "Oppenheimer (2023) – Directed by Christopher Nolan 💥",
+          "Mission: Impossible – Fallout (2018) – Directed by Christopher McQuarrie 🔥",
+          "F1: The Movie – Directed by Joseph Kosinski 🏎️"
+        ];
+        const randomIndex = Math.floor(Math.random() * movies.length);
+        document.getElementById("movieDisplay").innerText = movies[randomIndex];
+      }
+    </script>
+
+  </body>
+  <!-- Footer -->
+<footer id="footer">
+  <p>Student ID: 21319012 | Name: Darryl Ghiffary Marcello Arden Rizal</p>
+  <p>Original template from: <a href="https://html5up.net/editorial" target="_blank" rel="noopener">HTML5 UP — Editorial</a></p>
+</footer>
+
+</html>
